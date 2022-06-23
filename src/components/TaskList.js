@@ -7,7 +7,7 @@ const TaskList = (props) => {
             <div className="task-list-title">
                 <strong>{props.status}</strong>
             </div>
-            {props.task.map(task => (
+            {props.tasks.map(task => (
                 <Task key={task.id} task={task} />
             ))}
         </div>
