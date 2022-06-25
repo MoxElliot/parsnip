@@ -34,8 +34,12 @@ class TasksPage extends Component {
         this.props.onCreateTask({
             title: this.state.title,
             description: this.state.description,
-        })
+        });
         this.resetForm();
+    }
+
+    toggleForm = () => {
+        this.setState({ showNewcardForm: !this.state.showNewCardForm });
     }
 
     renderTaskLists() {
@@ -47,6 +51,7 @@ class TasksPage extends Component {
                     key={status} 
                     status={status}
                     tasks={statusTasks} 
+                    onStatusChange={this.props.onStatusChange}
                 />
             );
         });
