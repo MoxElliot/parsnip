@@ -17,6 +17,7 @@ class App extends Component {
 
   render() {
     console.log('props from App: ', this.props)
+    console.log(this.props.tasks)
     return (
       <div className="main-content">
       <TasksPage 
@@ -24,12 +25,13 @@ class App extends Component {
         onCreateTask={this.onCreateTask}
         onStatusChange={this.onStatusChange}
       />
+     
       </div>
         );  
       }
   }
 
-const mapStateToProps = (state) => {
+function mapStateToProps(state) {
   return {
     tasks: state.tasks
   }

@@ -7,7 +7,7 @@ const TASK_STATUSES = [
 ]
 
 
-const Task = (props) => {
+const Task = props => {
     return (
         <div className="task">
             <div className="task-header">
