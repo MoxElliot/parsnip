@@ -1,19 +1,28 @@
 {
-  "posts": [
+  "tasks": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "title": "Learn Redux",
+      "description": "The store, farts, and reducers, oh my!",
+      "status": "In Progress"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "title": "Peace on Earth",
+      "description": "No big deal.",
+      "status": "In Progress"
+    },
+    {
+      "id": 3,
+      "title": "Create Facebook for dogs",
+      "description": "The hottest new social network",
+      "status": "Completed"
+    },
+    {
+      "title": "Do Laundry",
+      "description": "Wash and fold work clothes",
+      "status": "Unstarted",
+      "id": 4
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
